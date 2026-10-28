@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kanchan | BTech Student Portfolio</title>
+<meta name="description" content="Portfolio of Kanchan, a BTech student building for the web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <a href="#home" class="logo">Kanchan<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <p class="eyebrow">Hello, I'm</p>
+    <h1>Kanchan</h1>
+    <p class="typing"><span id="typed"></span><i class="caret"></i></p>
+    <p class="lead">BTech student who loves turning ideas into fast, beautiful and useful things on the web.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<section id="about" class="section">
+  <div class="about-grid">
+    <div class="photo reveal">
+      <img src="https://picsum.photos/seed/kanchan-portrait/600/700" alt="Portrait placeholder" loading="lazy">
+    </div>
+    <div class="reveal" style="--d:.15s">
+      <h2 class="title">About <span class="grad">me</span></h2>
+      <p>I'm a BTech student who enjoys building things people actually use. I like clean interfaces, smooth motion and code that stays readable.</p>
+      <p>When I'm not in class, I'm experimenting with web design, learning new tools and working on side projects that push me a little outside my comfort zone.</p>
+      <div class="stats">
+        <div><b data-count="12">0</b><span>Projects</span></div>
+        <div><b data-count="8">0</b><span>Technologies</span></div>
+        <div><b data-count="3">0</b><span>Hackathons</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <h2 class="title reveal">My <span class="grad">skills</span></h2>
+  <div class="skills">
+    <div class="skill reveal"><div class="row"><span>HTML & CSS</span><em>90%</em></div><div class="bar"><i data-w="90"></i></div></div>
+    <div class="skill reveal" style="--d:.08s"><div class="row"><span>JavaScript</span><em>80%</em></div><div class="bar"><i data-w="80"></i></div></div>
+    <div class="skill reveal" style="--d:.16s"><div class="row"><span>Python</span><em>75%</em></div><div class="bar"><i data-w="75"></i></div></div>
+    <div class="skill reveal" style="--d:.24s"><div class="row"><span>UI / UX Design</span><em>70%</em></div><div class="bar"><i data-w="70"></i></div></div>
+    <div class="skill reveal" style="--d:.32s"><div class="row"><span>Git & GitHub</span><em>70%</em></div><div class="bar"><i data-w="70"></i></div></div>
+  </div>
+  <div class="chips reveal">
+    <span>React</span><span>Node.js</span><span>Three.js</span><span>Figma</span><span>SQL</span><span>Tailwind</span>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="title reveal">Featured <span class="grad">projects</span></h2>
+  <div class="cards">
+    <article class="card reveal tilt">
+      <img src="https://picsum.photos/seed/project-one/800/500" alt="Project one preview" loading="lazy">
+      <div class="card-body">
+        <h3>Campus Connect</h3>
+        <p>A web app that helps students find study groups, events and notes in one place.</p>
+        <div class="tags"><span>HTML</span><span>JS</span><span>Firebase</span></div>
+      </div>
+    </article>
+    <article class="card reveal tilt" style="--d:.12s">
+      <img src="https://picsum.photos/seed/project-two/800/500" alt="Project two preview" loading="lazy">
+      <div class="card-body">
+        <h3>Budget Buddy</h3>
+        <p>A simple expense tracker with charts, categories and monthly summaries.</p>
+        <div class="tags"><span>React</span><span>Chart.js</span></div>
+      </div>
+    </article>
+    <article class="card reveal tilt" style="--d:.24s">
+      <img src="https://picsum.photos/seed/project-three/800/500" alt="Project three preview" loading="lazy">
+      <div class="card-body">
+        <h3>Weather Lens</h3>
+        <p>A clean weather dashboard with a 5-day forecast and animated icons.</p>
+        <div class="tags"><span>API</span><span>CSS</span><span>JS</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2 class="title reveal">Let's <span class="grad">work together</span></h2>
+  <p class="reveal" style="text-align:center;max-width:520px;margin:0 auto 28px">Have an idea, an internship or just want to say hi? My inbox is open.</p>
+  <div class="cta reveal" style="justify-content:center">
+    <a class="btn primary" href="mailto:hello@example.com">Say hello</a>
+    <a class="btn ghost" href="https://github.com/KBatham2007" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer>© <span id="year"></span> Kanchan. Built with HTML, CSS, JS and Three.js.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
